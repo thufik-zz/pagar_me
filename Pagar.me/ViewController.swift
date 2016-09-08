@@ -24,10 +24,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         refreshControl.addTarget(self, action: #selector(self.refresh), forControlEvents:.ValueChanged)
         self.tabela.addSubview(refreshControl)
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.update_table), name: "update", object: nil)
+        
         self.title = "Transações"
         
         let request = NSMutableURLRequest(URL: NSURL(string: "https://api.pagar.me/1/transactions?api_key=ak_test_AAAfFBJDvGNMA6YMEoxRyIrK0PlhLI")!)
-        
         Alamofire.request(request).responseArray(completionHandler: {
             (response: Response<[Transaction], NSError>) in
             
@@ -121,6 +122,25 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         detailView.hidesBottomBarWhenPushed = true
         detailView.transaction = transactions_array?.objectAtIndex(indexPath.row) as! Transaction
         self.navigationController?.pushViewController(detailView, animated: true)
+    }
+    
+    func update_table(){
+        let request = NSMutableURLRequest(URL: NSURL(string: "https://api.pagar.me/1/transactions?api_key=ak_test_AAAfFBJDvGNMA6YMEoxRyIrK0PlhLI")!)
+        Alamofire.request(request).responseArray(completionHandler: {
+            (response: Response<[Transaction], NSError>) in
+            
+            self.transactions_array?.removeAllObjects()
+            let transactionArray = response.result.value
+            self.transactions_array = NSMutableArray()
+            
+            if let transactionArray = transactionArray {
+                for transaction in transactionArray {
+                    self.transactions_array?.addObject(transaction)
+                }
+            }
+            self.tabela.reloadData()
+            
+        })
     }
     
 

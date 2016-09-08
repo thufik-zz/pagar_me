@@ -44,7 +44,7 @@ class BuyViewController: UIViewController {
         request.HTTPMethod = "POST"
         //define o corpo da requisição utilizando UTF-8 como encoding
         //        request.HTTPBody =
-        request.HTTPBody =      "api_key=ak_test_AAAfFBJDvGNMA6YMEoxRyIrK0PlhLI&amount=\(product.amount)&payment_method=boleto&split_rules[0][recipient_id]=re_cisqrnmoq00y9w86ewom5fu07&split_rules[0][charge_processing_fee]=true&split_rules[0][liable]=true&split_rules[0][percentage]=30&split_rules[1][recipient_id]=re_ciskqb71v05axdm6d0xsfj6ed&split_rules[1][charge_processing_fee]=true&split_rules[1][liable]=false&split_rules[1][percentage]=70".dataUsingEncoding(NSUTF8StringEncoding,allowLossyConversion: false)
+        request.HTTPBody = "api_key=ak_test_AAAfFBJDvGNMA6YMEoxRyIrK0PlhLI&amount=\(product.amount)&payment_method=boleto&split_rules[0][recipient_id]=re_cisqrnmoq00y9w86ewom5fu07&split_rules[0][charge_processing_fee]=true&split_rules[0][liable]=true&split_rules[0][percentage]=30&split_rules[1][recipient_id]=re_ciskqb71v05axdm6d0xsfj6ed&split_rules[1][charge_processing_fee]=true&split_rules[1][liable]=false&split_rules[1][percentage]=70".dataUsingEncoding(NSUTF8StringEncoding,allowLossyConversion: false)
         
         //let alertViewResponder: SCLAlertViewResponder = SCLAlertView().showSuccess("Pedido efetuado", subTitle: "Boleto bancário gerado.")
         
@@ -55,9 +55,9 @@ class BuyViewController: UIViewController {
             showCloseButton: false
         )
         
-        let teste = SCLAlertView(appearance: appearance)
-        teste.addButton("Ok", target: self, selector: #selector(self.ok))
-        teste.showSuccess("Pedido efetuado", subTitle: "Boleto bancário gerado.")
+        let alert = SCLAlertView(appearance: appearance)
+        alert.addButton("Ok", target: self, selector: #selector(self.ok))
+        alert.showSuccess("Pedido efetuado", subTitle: "Boleto bancário gerado.")
         
         Alamofire.request(request).responseJSON(completionHandler: { (response) -> Void in
             

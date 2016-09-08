@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SCLAlertView
 
 class DetailTransactionViewController: UITableViewController {
     
@@ -24,6 +26,10 @@ class DetailTransactionViewController: UITableViewController {
         {
             split = true
         }
+        
+        var item = UIBarButtonItem(title: "Simular pagamento", style: .Bordered, target: self, action: #selector(self.simulate_payment))
+        self.navigationItem.rightBarButtonItem = item
+        
         // Do any additional setup after loading the view.
     }
 
@@ -159,6 +165,38 @@ class DetailTransactionViewController: UITableViewController {
         return cell
     }
     
+    
+    func simulate_payment(){
+     
+        let request = NSMutableURLRequest(URL: NSURL(string: "https://api.pagar.me/1/transactions/\(transaction.id)?api_key=ak_test_AAAfFBJDvGNMA6YMEoxRyIrK0PlhLI&status=paid")!)
+        request.HTTPMethod = "PUT"
+        //request.HTTPBody = "api_key=ak_test_AAAfFBJDvGNMA6YMEoxRyIrK0PlhLI&status=paid".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+        
+        let appearance = SCLAlertView.SCLAppearance(
+            kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+            kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+            kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+            showCloseButton: false
+        )
+        
+        let alert = SCLAlertView(appearance: appearance)
+        alert.addButton("Ok", target: self, selector: #selector(self.ok))
+        
+        
+        Alamofire.request(request).responseJSON(completionHandler: { (response) -> Void in
+            print(response.result.debugDescription)
+        
+                alert.showSuccess("Sucesso", subTitle: "Simulação efetuada")
+            
+        })
+        
+    }
+    
+    
+    func ok(){
+        NSNotificationCenter.defaultCenter().postNotificationName("update", object: nil)
+        self.navigationController?.popViewControllerAnimated(true)
+    }
     
 
     /*
