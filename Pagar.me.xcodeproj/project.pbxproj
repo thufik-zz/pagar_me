@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		489F6720D5ABC88BDCB52646 /* Pods_Pagar_me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6C8457EF0CA6A6256D63E /* Pods_Pagar_me.framework */; };
+		B53027901D78CA5D006BAFDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530278F1D78CA5D006BAFDE /* AppDelegate.swift */; };
+		B53027921D78CA5D006BAFDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53027911D78CA5D006BAFDE /* ViewController.swift */; };
+		B53027951D78CA5D006BAFDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53027931D78CA5D006BAFDE /* Main.storyboard */; };
+		B53027971D78CA5D006BAFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53027961D78CA5D006BAFDE /* Assets.xcassets */; };
+		B530279A1D78CA5D006BAFDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53027981D78CA5D006BAFDE /* LaunchScreen.storyboard */; };
+		B53027A21D7F60EA006BAFDE /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53027A11D7F60EA006BAFDE /* Transaction.swift */; };
+		B577AA521D811177003C8C93 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577AA511D811177003C8C93 /* InitialViewController.swift */; };
+		B577AA541D81139F003C8C93 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577AA531D81139F003C8C93 /* UserViewController.swift */; };
+		B577AA561D811602003C8C93 /* DetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577AA551D811602003C8C93 /* DetailTransactionViewController.swift */; };
+		B577AA581D812218003C8C93 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577AA571D812218003C8C93 /* ProductsViewController.swift */; };
+		B577AA5A1D81245E003C8C93 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577AA591D81245E003C8C93 /* Product.swift */; };
+		B577AA5C1D812E5E003C8C93 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577AA5B1D812E5E003C8C93 /* BuyViewController.swift */; };
+		B577AA5E1D818FD5003C8C93 /* ExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577AA5D1D818FD5003C8C93 /* ExitViewController.swift */; };
+		B577AA601D8196B4003C8C93 /* SplitRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577AA5F1D8196B4003C8C93 /* SplitRule.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10C6C8457EF0CA6A6256D63E /* Pods_Pagar_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pagar_me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F4B4F48E1572453DFC1114 /* Pods-Pagar.me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagar.me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pagar.me/Pods-Pagar.me.debug.xcconfig"; sourceTree = "<group>"; };
+		B530278C1D78CA5D006BAFDE /* Pagar.me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pagar.me.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B530278F1D78CA5D006BAFDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B53027911D78CA5D006BAFDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B53027941D78CA5D006BAFDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B53027961D78CA5D006BAFDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B53027991D78CA5D006BAFDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B530279B1D78CA5D006BAFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53027A11D7F60EA006BAFDE /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = ../Transaction.swift; sourceTree = "<group>"; };
+		B577AA511D811177003C8C93 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitialViewController.swift; path = ../InitialViewController.swift; sourceTree = "<group>"; };
+		B577AA531D81139F003C8C93 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserViewController.swift; path = ../UserViewController.swift; sourceTree = "<group>"; };
+		B577AA551D811602003C8C93 /* DetailTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewController.swift; sourceTree = "<group>"; };
+		B577AA571D812218003C8C93 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		B577AA591D81245E003C8C93 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B577AA5B1D812E5E003C8C93 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		B577AA5D1D818FD5003C8C93 /* ExitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExitViewController.swift; path = ../ExitViewController.swift; sourceTree = "<group>"; };
+		B577AA5F1D8196B4003C8C93 /* SplitRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitRule.swift; sourceTree = "<group>"; };
+		CC473B629C1DFDB9DDC389A4 /* Pods-Pagar.me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagar.me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pagar.me/Pods-Pagar.me.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B53027891D78CA5D006BAFDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489F6720D5ABC88BDCB52646 /* Pods_Pagar_me.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51D8020E49ACD51C46B3AF7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98F4B4F48E1572453DFC1114 /* Pods-Pagar.me.debug.xcconfig */,
+				CC473B629C1DFDB9DDC389A4 /* Pods-Pagar.me.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B53027831D78CA5D006BAFDE = {
+			isa = PBXGroup;
+			children = (
+				B530278E1D78CA5D006BAFDE /* Pagar.me */,
+				B530278D1D78CA5D006BAFDE /* Products */,
+				51D8020E49ACD51C46B3AF7F /* Pods */,
+				D32AA5CC5611D8B3359FBCA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B530278D1D78CA5D006BAFDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B530278C1D78CA5D006BAFDE /* Pagar.me.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B530278E1D78CA5D006BAFDE /* Pagar.me */ = {
+			isa = PBXGroup;
+			children = (
+				B577AA5D1D818FD5003C8C93 /* ExitViewController.swift */,
+				B577AA511D811177003C8C93 /* InitialViewController.swift */,
+				B53027A11D7F60EA006BAFDE /* Transaction.swift */,
+				B577AA5F1D8196B4003C8C93 /* SplitRule.swift */,
+				B577AA591D81245E003C8C93 /* Product.swift */,
+				B530278F1D78CA5D006BAFDE /* AppDelegate.swift */,
+				B53027911D78CA5D006BAFDE /* ViewController.swift */,
+				B577AA571D812218003C8C93 /* ProductsViewController.swift */,
+				B577AA531D81139F003C8C93 /* UserViewController.swift */,
+				B577AA551D811602003C8C93 /* DetailTransactionViewController.swift */,
+				B577AA5B1D812E5E003C8C93 /* BuyViewController.swift */,
+				B53027931D78CA5D006BAFDE /* Main.storyboard */,
+				B53027961D78CA5D006BAFDE /* Assets.xcassets */,
+				B53027981D78CA5D006BAFDE /* LaunchScreen.storyboard */,
+				B530279B1D78CA5D006BAFDE /* Info.plist */,
+			);
+			path = Pagar.me;
+			sourceTree = "<group>";
+		};
+		D32AA5CC5611D8B3359FBCA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10C6C8457EF0CA6A6256D63E /* Pods_Pagar_me.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B530278B1D78CA5D006BAFDE /* Pagar.me */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B530279E1D78CA5D006BAFDE /* Build configuration list for PBXNativeTarget "Pagar.me" */;
+			buildPhases = (
+				531255C5637EA8A64FB547AB /* Check Pods Manifest.lock */,
+				B53027881D78CA5D006BAFDE /* Sources */,
+				B53027891D78CA5D006BAFDE /* Frameworks */,
+				B530278A1D78CA5D006BAFDE /* Resources */,
+				BB4F31182D830960FE539B4A /* Embed Pods Frameworks */,
+				B2A7184A7A883745C18FB4ED /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pagar.me;
+			productName = Pagar.me;
+			productReference = B530278C1D78CA5D006BAFDE /* Pagar.me.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B53027841D78CA5D006BAFDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Fellipe Thufik Costa Gomes Hoashi";
+				TargetAttributes = {
+					B530278B1D78CA5D006BAFDE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B53027871D78CA5D006BAFDE /* Build configuration list for PBXProject "Pagar.me" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B53027831D78CA5D006BAFDE;
+			productRefGroup = B530278D1D78CA5D006BAFDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B530278B1D78CA5D006BAFDE /* Pagar.me */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B530278A1D78CA5D006BAFDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B530279A1D78CA5D006BAFDE /* LaunchScreen.storyboard in Resources */,
+				B53027971D78CA5D006BAFDE /* Assets.xcassets in Resources */,
+				B53027951D78CA5D006BAFDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		531255C5637EA8A64FB547AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2A7184A7A883745C18FB4ED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pagar.me/Pods-Pagar.me-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB4F31182D830960FE539B4A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pagar.me/Pods-Pagar.me-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B53027881D78CA5D006BAFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B577AA561D811602003C8C93 /* DetailTransactionViewController.swift in Sources */,
+				B577AA5A1D81245E003C8C93 /* Product.swift in Sources */,
+				B577AA5C1D812E5E003C8C93 /* BuyViewController.swift in Sources */,
+				B53027921D78CA5D006BAFDE /* ViewController.swift in Sources */,
+				B577AA581D812218003C8C93 /* ProductsViewController.swift in Sources */,
+				B577AA601D8196B4003C8C93 /* SplitRule.swift in Sources */,
+				B577AA541D81139F003C8C93 /* UserViewController.swift in Sources */,
+				B577AA5E1D818FD5003C8C93 /* ExitViewController.swift in Sources */,
+				B53027901D78CA5D006BAFDE /* AppDelegate.swift in Sources */,
+				B53027A21D7F60EA006BAFDE /* Transaction.swift in Sources */,
+				B577AA521D811177003C8C93 /* InitialViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B53027931D78CA5D006BAFDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53027941D78CA5D006BAFDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B53027981D78CA5D006BAFDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53027991D78CA5D006BAFDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B530279C1D78CA5D006BAFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B530279D1D78CA5D006BAFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B530279F1D78CA5D006BAFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F4B4F48E1572453DFC1114 /* Pods-Pagar.me.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pagar.me/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mackenzie.Pagar-me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B53027A01D78CA5D006BAFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC473B629C1DFDB9DDC389A4 /* Pods-Pagar.me.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pagar.me/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mackenzie.Pagar-me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B53027871D78CA5D006BAFDE /* Build configuration list for PBXProject "Pagar.me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B530279C1D78CA5D006BAFDE /* Debug */,
+				B530279D1D78CA5D006BAFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B530279E1D78CA5D006BAFDE /* Build configuration list for PBXNativeTarget "Pagar.me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B530279F1D78CA5D006BAFDE /* Debug */,
+				B53027A01D78CA5D006BAFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B53027841D78CA5D006BAFDE /* Project object */;
+}
