@@ -1,0 +1,6 @@
+framework module PagarMe {
+  umbrella header "PagarMe-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,4 +6,5 @@ target 'Pagar.me' do
     pod 'ObjectMapper', '~> 1.3'
     pod 'AlamofireObjectMapper', '~> 3.0'
     pod 'SCLAlertView'
+    pod 'PagarMe'
 end

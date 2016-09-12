@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -15,6 +20,16 @@
 			<false/>
 		</dict>
 		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectiveLuhn.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PagarMe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,12 +47,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21E7088156D822ECFCACA69438BEAA00</key>
+		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>41915814B777F5420DD75DE580482191</key>
+		<key>62106615B20D3117ACE623C87B1755CD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F15375FFC0382B225AEDAC6F03BBBC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,7 +67,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>98CF99950F362198EE1AD4059ECA9F5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C5CBCAA97E951CC882334464FBDF983D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9202B76E925F451EA60E9B944EEB88F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

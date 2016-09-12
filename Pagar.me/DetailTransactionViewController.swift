@@ -27,8 +27,12 @@ class DetailTransactionViewController: UITableViewController {
             split = true
         }
         
-        var item = UIBarButtonItem(title: "Simular pagamento", style: .Bordered, target: self, action: #selector(self.simulate_payment))
-        self.navigationItem.rightBarButtonItem = item
+        if transaction.status == "waiting_payment"{
+            let item = UIBarButtonItem(title: "Simular pagamento", style: .Bordered, target: self, action: #selector(self.simulate_payment))
+            self.navigationItem.rightBarButtonItem = item
+        }
+        
+
         
         // Do any additional setup after loading the view.
     }
@@ -170,7 +174,6 @@ class DetailTransactionViewController: UITableViewController {
      
         let request = NSMutableURLRequest(URL: NSURL(string: "https://api.pagar.me/1/transactions/\(transaction.id)?api_key=ak_test_AAAfFBJDvGNMA6YMEoxRyIrK0PlhLI&status=paid")!)
         request.HTTPMethod = "PUT"
-        //request.HTTPBody = "api_key=ak_test_AAAfFBJDvGNMA6YMEoxRyIrK0PlhLI&status=paid".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
         
         let appearance = SCLAlertView.SCLAppearance(
             kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,

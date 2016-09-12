@@ -84,14 +84,20 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Pagar.me/AFNetworking.framework"
   install_framework "Pods-Pagar.me/Alamofire.framework"
   install_framework "Pods-Pagar.me/AlamofireObjectMapper.framework"
   install_framework "Pods-Pagar.me/ObjectMapper.framework"
+  install_framework "Pods-Pagar.me/ObjectiveLuhn.framework"
+  install_framework "Pods-Pagar.me/PagarMe.framework"
   install_framework "Pods-Pagar.me/SCLAlertView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Pagar.me/AFNetworking.framework"
   install_framework "Pods-Pagar.me/Alamofire.framework"
   install_framework "Pods-Pagar.me/AlamofireObjectMapper.framework"
   install_framework "Pods-Pagar.me/ObjectMapper.framework"
+  install_framework "Pods-Pagar.me/ObjectiveLuhn.framework"
+  install_framework "Pods-Pagar.me/PagarMe.framework"
   install_framework "Pods-Pagar.me/SCLAlertView.framework"
 fi

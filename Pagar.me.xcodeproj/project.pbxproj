@@ -43,6 +43,7 @@
 		B577AA5B1D812E5E003C8C93 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		B577AA5D1D818FD5003C8C93 /* ExitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExitViewController.swift; path = ../ExitViewController.swift; sourceTree = "<group>"; };
 		B577AA5F1D8196B4003C8C93 /* SplitRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitRule.swift; sourceTree = "<group>"; };
+		B5AD402A1D863FD3002B3F27 /* Pagar.me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pagar.me-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC473B629C1DFDB9DDC389A4 /* Pods-Pagar.me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagar.me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pagar.me/Pods-Pagar.me.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +89,7 @@
 		B530278E1D78CA5D006BAFDE /* Pagar.me */ = {
 			isa = PBXGroup;
 			children = (
+				B5AD402A1D863FD3002B3F27 /* Pagar.me-Bridging-Header.h */,
 				B577AA5D1D818FD5003C8C93 /* ExitViewController.swift */,
 				B577AA511D811177003C8C93 /* InitialViewController.swift */,
 				B53027A11D7F60EA006BAFDE /* Transaction.swift */,

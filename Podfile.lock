@@ -1,21 +1,44 @@
 PODS:
-  - Alamofire (3.4.2)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Alamofire (3.5.0)
   - AlamofireObjectMapper (3.0.2):
     - Alamofire (~> 3.2)
     - ObjectMapper (~> 1.0)
+  - ObjectiveLuhn (1.0.2)
   - ObjectMapper (1.4.0)
+  - PagarMe (1.1.1):
+    - AFNetworking (~> 3.0)
+    - ObjectiveLuhn (~> 1.0)
   - SCLAlertView (0.6.0)
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
   - AlamofireObjectMapper (~> 3.0)
   - ObjectMapper (~> 1.3)
+  - PagarMe
   - SCLAlertView
 
 SPEC CHECKSUMS:
-  Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
   AlamofireObjectMapper: 70f97cbf45c01c48d26aa07a1a7059a60ed7411d
+  ObjectiveLuhn: 7ffbe89856145a65f60ce1fa0f928ce95fdb9509
   ObjectMapper: a07ad0462c5adf014adc0f89ef04c29b626e855e
+  PagarMe: a4458f45121a085b343331b8c57255ce0f09b824
   SCLAlertView: 0f6b3c23a48b4993564ff1dd3c065782e4b2b687
 
 COCOAPODS: 0.39.0

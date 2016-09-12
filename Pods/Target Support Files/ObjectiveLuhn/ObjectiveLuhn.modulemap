@@ -1,0 +1,6 @@
+framework module ObjectiveLuhn {
+  umbrella header "ObjectiveLuhn-umbrella.h"
+
+  export *
+  module * { export * }
+}
