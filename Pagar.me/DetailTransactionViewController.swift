@@ -93,6 +93,10 @@ class DetailTransactionViewController: UITableViewController {
                 if transaction.status == "waiting_payment"{
                     cell.detailTextLabel?.text = "Aguardando pagamento"
                 }
+                else if transaction.status == "refused"
+                {
+                    cell.detailTextLabel?.text = "Recusado"
+                }
                 else
                 {
                     cell.detailTextLabel?.text = "Pago"

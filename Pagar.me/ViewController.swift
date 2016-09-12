@@ -85,6 +85,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         {
             cell.imageView?.image = UIImage(named: "yellow")
         }
+        else if (transactions_array![indexPath.row] as! Transaction).status == "refused"
+        {
+            cell.imageView?.image = UIImage(named: "red")
+        }
         else
         {
             cell.imageView?.image = UIImage(named: "green")

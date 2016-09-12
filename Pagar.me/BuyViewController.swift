@@ -84,7 +84,7 @@ class BuyViewController: UIViewController {
     @IBAction func buyWithCard(sender: UIButton) {
     
         PagarMe.sharedInstance().encryptionKey = "ek_test_D8fnTNOqaPBQx46QBiDprUzeophI7q"
-        let creditCard = PagarMeCreditCard(cardNumber: "4111111111111111", cardHolderName: "Test Card", cardExpirationMonth: "10", cardExpirationYear: "20", cardCvv: "666")
+        let creditCard = PagarMeCreditCard(cardNumber: "4111111111111111", cardHolderName: "Test Card", cardExpirationMonth: "10", cardExpirationYear: "20", cardCvv: "623")
         
         if creditCard.hasErrorCardCVV(){
             print("erro no CVV")
